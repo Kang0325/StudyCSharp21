@@ -16,7 +16,10 @@ namespace Chap05App
                 string line = Console.ReadLine(); // 콘솔에서 입력값을 변수할당
 
                 if (line == "quit") break; // quit 입력하면 프로그램 종료
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0fb6359cca711ac5977349d377251fb8cb8be1c3
                 int number = 0;
                 int.TryParse(line, out number); // int.Parse(line)
                 //Console.WriteLine(number);
