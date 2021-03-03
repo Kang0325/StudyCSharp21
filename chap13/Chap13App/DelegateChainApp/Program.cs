@@ -24,7 +24,7 @@ namespace DelegateChainApp
         static void Main(string[] args)
         {
             Console.WriteLine("Calculating!!");
-            AllCalc allCalc = Plus;
+            AllCalc allCalc = new AllCalc(Plus);
             allCalc += Minus;
             allCalc += Multiple;
             allCalc += Divide;
