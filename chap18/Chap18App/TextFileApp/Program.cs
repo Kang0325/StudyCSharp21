@@ -13,7 +13,7 @@ namespace TextFileApp
 
             try
             {
-                sw = new StreamWriter(new FileStream(filePath, FileMode.Open));
+                sw = new StreamWriter(new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write));
                 sw.WriteLine($"int.MaxValue = {int.MaxValue}");
                 sw.WriteLine("Hello World!");
                 sw.WriteLine($"uint.MaxValue = {uint.MaxValue}");
@@ -28,16 +28,28 @@ namespace TextFileApp
             }
             finally
             {
+                if (sw != null)
                 sw.Close();
             }
 
             StreamReader sr = null;
-            sr = new StreamReader(new FileStream(filePath, FileMode.Open));
-            Console.WriteLine($"File size : {sr.BaseStream.Length} bytes");
-
-            while (sr.EndOfStream == false)
+            try
             {
-                Console.WriteLine(sr.ReadLine());
+                sr = new StreamReader(new FileStream(filePath, FileMode.Open, FileAccess.Read));
+                Console.WriteLine($"File size : {sr.BaseStream.Length} bytes");
+
+                while (sr.EndOfStream == false)
+                {
+                    Console.WriteLine(sr.ReadLine());
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"파일 읽기 예외발생: {ex.Message}");
+            }
+            finally
+            {
+                sw.Close();
             }
             sr.Close();
         }
