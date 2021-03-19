@@ -36,12 +36,10 @@ PKNU C# 학습 리포지토리
 
 [Chap19 Source](https://github.com/Kang0325/StudyCSharp21/tree/main/chap19/Chap19App)
 <hr>
-SideTaskApp
-<hr>
+SideTaskApp <br>
 ![결과](chap19ref/sidetask.png)
 <hr>
-ThreadStateApp
-<hr>
+ThreadStateApp <br>
 ![결과](chap19ref/thread.png)
 
 [Chap20 Source](https://github.com/Kang0325/StudyCSharp21/tree/main/chap20/Chap20App)
