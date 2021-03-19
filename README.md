@@ -35,6 +35,8 @@ PKNU C# 학습 리포지토리
 ## WinForm
 
 [Chap19 Source](https://github.com/Kang0325/StudyCSharp21/tree/main/chap19/Chap19App)
+![결과](chap19ref/sidetask.png)
+![결과](chap19ref/thread.png)
 
 [Chap20 Source](https://github.com/Kang0325/StudyCSharp21/tree/main/chap20/Chap20App)
 
