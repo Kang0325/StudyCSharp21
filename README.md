@@ -34,8 +34,8 @@ PKNU C# 학습 리포지토리
 -------------------------------------------------------------------------------------
 ## WinForm
 
-[Chap19 Source](https://github.com/Kang0325/StudyCSharp21/tree/main/chap19/Chap19App)
-<hr>
+###Chap19 [Source](https://github.com/Kang0325/StudyCSharp21/tree/main/chap19/Chap19App)
+
 SideTaskApp
 
 ![결과](chap19ref/sidetask.png)
@@ -46,8 +46,8 @@ ThreadStateApp
 
 <hr>
 
-[Chap20 Source](https://github.com/Kang0325/StudyCSharp21/tree/main/chap20/Chap20App)
-<hr>
+###Chap20 [Source](https://github.com/Kang0325/StudyCSharp21/tree/main/chap20/Chap20App)
+
 FileCopyApp
 
 ![결과](chap20ref/copy.png)
